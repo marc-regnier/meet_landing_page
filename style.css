@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 23rem;
+  font-family: "Red Hat Display", serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 23rem;
+  height: 4.75rem;
+}
+
+main {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageOne {
+  background-image: url("assets/tablet/image-hero.png");
+  background-size: cover;
+  width: 27rem;
+  height: 10rem;
+  margin-left: -25px;
+  margin-bottom: 3rem;
+  overflow: visible;
+}
+
+.imageTwo {
+  visibility: hidden;
+}
+
+.intro {
+  width: 23rem;
+  height: 40rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.container_card {
+  width: 23rem;
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 19rem;
+  height: 21rem;
+  text-align: center;
+}
+
+.card > h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.9rem;
+  width: 19rem;
+  height: 5.5rem;
+  color: #28283d;
+  line-height: 110%;
+  margin-bottom: 2rem;
+}
+
+.card > p {
+  width: 19rem;
+  height: 4.5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #87879d;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+.card > button {
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.buttonGreen {
+  width: 12rem;
+  height: 3.5rem;
+  background-color: #4d96a9;
+  color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.numberBlue {
+  color: #8fe3f9;
+}
+
+.buttonPurple {
+  width: 10rem;
+  height: 3.5rem;
+  background-color: #855fb1;
+  color: #fafafa;
+}
+
+.presentation {
+  width: 19rem;
+  height: 57rem;
+  text-align: center;
+}
+
+.presentation > svg {
+  position: relative;
+}
+
+.presentation_image {
+  width: 3.5rem;
+  height: 19rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.presentation_image > img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 8px;
+}
+
+.presentation_text {
+  width: 19rem;
+  height: 15rem;
+}
+
+.textGreen {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  color: #4d96a9;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.presentation_text > h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #28283d;
+  line-height: 110%;
+  margin-bottom: 2rem;
+}
+
+.presentationText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #87879d;
+}
+
+.arrow {
+  z-index: 1;
+  position: absolute;
+  margin-top: -480px;
+}
+
+footer {
+  position: relative;
+  width: 24rem;
+  height: 30rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_image {
+  width: 24rem;
+  height: 23rem;
+  margin-bottom: 2rem;
+  background-image: url("assets/mobile/image-footer.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_title {
+  position: relative;
+  z-index: 1;
+  color: #fafafa;
+  width: 19rem;
+  height: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer_card {
+  width: 19rem;
+  height: 15rem;
+  text-align: center;
+}
+
+.footer_card > p {
+  position: relative;
+  width: 19rem;
+  z-index: 1;
+  color: #fafafa;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.footer_card > button {
+  position: relative;
+  width: 12rem;
+  height: 3.5rem;
+  z-index: 1;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.numberPurple {
+  color: #d9b8ff;
+}
+
+.footer_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d96a9;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+/* version tablets */
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  body {
+    display: grid;
+    grid-template-columns: 48rem;
+    font-family: "Red Hat Display", serif;
+  }
+
+  main {
+    width: 48rem;
+  }
+
+  header {
+    width: 48rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .imageOne {
+    background-image: url("assets/tablet/image-hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48rem;
+    height: 18rem;
+  }
+
+  .intro {
+    width: 53rem;
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 42rem;
+    height: 16rem;
+  }
+
+  .card > h2 {
+    width: 28rem;
+    height: 8.75rem;
+    font-size: 4rem;
+  }
+
+  .card > p {
+    width: 28rem;
+    font-size: 1rem;
+  }
+
+  .card > button {
+    margin-left: 1rem;
+  }
+
+  .presentation {
+    width: 48rem;
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .presentation_image {
+    width: 48rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10rem;
+    margin-top: 4rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .presentation_image > img {
+    grid-row: 1 / 1;
+  }
+
+  .presentation_text {
+    width: 31.5rem;
+    height: 13rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  footer {
+    width: 48rem;
+    height: 27rem;
+  }
+
+  .arrow {
+    z-index: 1;
+    position: absolute;
+    margin-top: -430px;
+  }
+
+  .footer_image {
+    width: 48rem;
+    height: 20rem;
+    background-image: url("assets/tablet/image-footer.jpg");
+  }
+
+  .footer_title {
+    width: 31rem;
+    height: 2.5rem;
+  }
+
+  .footer_card {
+    width: 31rem;
+    height: 12rem;
+    text-align: center;
+  }
+
+  .footer_card > p {
+    width: 31rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  body {
+    display: grid;
+    grid-template-columns: 90rem;
+    font-family: "Red Hat Display", serif;
+  }
+
+  header {
+    width: 90rem;
+    text-align: center;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90rem;
+  }
+
+  .imageOne {
+    background-image: url("assets/desktop/image-hero-left.png");
+    width: 26rem;
+    height: 20rem;
+  }
+
+  .imageTwo {
+    visibility: visible;
+    background-image: url("assets/desktop/image-hero-right.png");
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .card {
+    width: 28rem;
+    height: 19rem;
+  }
+
+  .card > h2 {
+    width: 28rem;
+    height: 8.75rem;
+    font-size: 4rem;
+  }
+
+  .card > p {
+    width: 28rem;
+  }
+
+  .card > .buttonPurple {
+    margin-left: 1rem;
+  }
+
+  .presentation {
+    width: 90rem;
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .presentation_image {
+    width: 70rem;
+    height: 16rem;
+    display: grid;
+    grid-template-columns: repeat(4, 16rem);
+    grid-template-rows: 16rem;
+    gap: 2rem;
+  }
+
+  .presentation_image > img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .presentation_text {
+    width: 34rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation_text > h2 {
+    width: 27rem;
+    height: 5.5rem;
+    font-size: 2.5rem;
+  }
+
+  .presentationText {
+    width: 34rem;
+    height: 5rem;
+    font-size: 1.12rem;
+  }
+
+  footer {
+    width: 90rem;
+    height: 26rem;
+    display: flex;
+    margin-top: 4.5rem;
+  }
+
+  .arrow {
+    z-index: 1;
+    position: absolute;
+    margin-top: -430px;
+  }
+
+  .footer_image {
+    width: 90rem;
+    height: 19.5rem;
+    background-image: url("assets/desktop/image-footer.jpg");
+  }
+
+  .footer_card {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 5.5rem;
+    gap: 2rem;
+  }
+
+  .footer_title {
+    font-size: 2.5rem;
+    width: 27rem;
+  }
+}
